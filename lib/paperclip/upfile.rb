@@ -14,6 +14,7 @@ module Paperclip
       when "txt"                     then "text/plain"
       when %r"html?"                 then "text/html"
       when "csv", "xml", "css", "js" then "text/#{type}"
+      when "pdf"                     then "application/pdf"
       else "application/x-#{type}"
       end
     end
